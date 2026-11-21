@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#063b72"><title>EDSA Bus Carousel Fare Calculator | Commute Guide</title><link rel="stylesheet" href="styles.css"></head><body data-line="bus">
+<header><div class="wrap"><div class="brand">A Guide for Commuters</div><nav class="site-nav" aria-label="Main navigation"><a href="index.html" class="active" aria-current="page">EDSA Bus Carousel</a><a href="mrt.html">MRT-3</a><a href="lrt1.html">LRT-1</a><a href="lrt2.html">LRT-2</a><a href="routes.html">Routes</a></nav>
+<div class="hero"><div><h1>EDSA Bus Carousel Fare Calculator</h1><p>Check the northbound and southbound fares between EDSA Busway stations, effective September 28, 2026.</p></div><a href="routes.html#edsa" class="route-pill">VIEW ROUTES &amp; MATRIX</a></div>
+</div></header>
+<main><section class="panel"><h2>Calculate your pamasahe</h2><p class="sub">Choose your boarding and destination stations.</p>
+<div class="fields"><div class="field"><label for="from">FROM</label><select id="from"></select></div>
+<button type="button" class="swap" id="swap" aria-label="Swap stations" title="Swap stations">⇄</button>
+<div class="field"><label for="to">TO</label><select id="to"></select></div></div>
+<button type="button" class="primary" id="submit">SHOW FARE</button><div class="inline-error" id="error" role="alert"></div>
+<div class="result" id="result" aria-live="polite"><div class="route" id="routeText"></div>
+<div class="fares"><div class="fare "><div class="label">REGULAR FARE</div><div class="amount" id="amount0">₱0.00</div><div class="tiny">Standard passenger</div></div><div class="fare discount"><div class="label">DISCOUNTED FARE</div><div class="amount" id="amount1">₱0.00</div><div class="tiny">Student / Senior Citizen / PWD</div></div></div>
+<p class="note">Source: original EDSA Bus Carousel fare table supplied in index.html.</p></div><div class="status" id="status">Fare matrix: EDSA Busway · September 28, 2026 · Philippine pesos (₱) · <a class="source-link" href="routes.html#edsa">View source image</a></div>
+</section><div class="footer">Fare information is provided as a convenience, not as an official railway or LTFRB service. Confirm fares with the operator and posted advisories before traveling.</div></main><script src="fare-data.js"></script><script src="app.js"></script></body></html>

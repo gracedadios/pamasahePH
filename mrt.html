@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#063b72"><title>MRT-3 Fare Calculator | Metro Manila Commute Guide</title><link rel="stylesheet" href="styles.css"></head><body data-line="mrt">
+<header><div class="wrap"><div class="brand">Metro Manila · A Guide for Commuters</div><nav class="site-nav" aria-label="Main navigation"><a href="index.html">EDSA Bus Carousel</a><a href="mrt.html" class="active" aria-current="page">MRT-3</a><a href="lrt1.html">LRT-1</a><a href="lrt2.html">LRT-2</a><a href="routes.html">Routes</a></nav>
+<div class="hero"><div><h1>MRT-3 Fare Calculator</h1><p>Find your station-to-station fare using the 50% discounted MRT-3 fare matrix for all passengers.</p></div><a href="routes.html#mrt" class="route-pill">VIEW ROUTES &amp; MATRIX</a></div>
+</div></header>
+<main><section class="panel"><h2>Calculate your pamasahe</h2><p class="sub">Choose your boarding and destination stations.</p>
+<div class="fields"><div class="field"><label for="from">FROM</label><select id="from"></select></div>
+<button type="button" class="swap" id="swap" aria-label="Swap stations" title="Swap stations">⇄</button>
+<div class="field"><label for="to">TO</label><select id="to"></select></div></div>
+<button type="button" class="primary" id="submit">SHOW FARE</button><div class="inline-error" id="error" role="alert"></div>
+<div class="result" id="result" aria-live="polite"><div class="route" id="routeText"></div>
+<div class="fares single"><div class="fare "><div class="label">50% DISCOUNTED FARE</div><div class="amount" id="amount0">₱0.00</div><div class="tiny">All passengers · already discounted</div></div></div>
+<p class="note">The uploaded MRT-3 matrix already includes the 50% discount for all passengers. No further discount has been applied.</p></div><div class="status" id="status">Fare matrix: MRT-3 · 50% discount for all · March 23, 2026 · Philippine pesos (₱) · <a class="source-link" href="routes.html#mrt">View source image</a></div>
+</section><div class="footer">Fare information is provided as a convenience, not as an official railway or LTFRB service. Confirm fares with the operator and posted advisories before traveling.</div></main><script src="fare-data.js"></script><script src="app.js"></script></body></html>
